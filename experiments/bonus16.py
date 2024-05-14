@@ -17,7 +17,7 @@ window = sg.Window("File Compressor", layout=[[label1, input1, choose_button1],
                                               [compress_button, output_label]])
 while True:
     event, values = window.read()
-    print(event,values)
+    print(event, values)
     filepaths = values["files"].split(';')
     folder = values["folder"]
     make_archive(filepaths, folder)
